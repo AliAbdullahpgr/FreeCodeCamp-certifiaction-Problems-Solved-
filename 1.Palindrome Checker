@@ -1,0 +1,13 @@
+function palindrome(str){
+ const tr = str.replace(/[^a-zA-Z0-9]/g, '');
+        let res = tr.toUpperCase();
+        let rev = '';
+        for(let i = res.length-1; i>=0; i--){
+            rev+=res[i];
+        }
+        if(rev===res){
+            return "palindrome";
+        }else{
+            return "not a palindrome";
+        }
+}
